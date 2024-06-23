@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN QURAN ACADEMY</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* navigation bar */
+        #navbar {
+            position: absolute;
+            display: flex;
+            align-items: center;
+        }
+
+        /* navigation logo image */
+        #logo {
+            margin: 10px 34px;
+        }
+
+        #logo img {
+            margin: 3px 6px;
+            height: 59px;
+        }
+
+        /* navbar list styling  */
+        #navbar ul {
+             display: flex; 
+         } 
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: whitesmoke;
+        }
+
+        /* home section */
+        #home {
+            height: 633px;
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home h1 {
+            font-weight: bold;
+            color: azure;
+            text-align: center;
+        }
+
+        #home p {
+            color: azure;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        #home::before {
+            content: "";
+            background: url('../backg.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 90%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+        /* services section */
+        .services-container h1{
+            text-align: center;
+         display: inline-block;
+            margin-left: 720px;
+            margin-top: 100px;
+            height: 100%; 
+            font-size: 2.9rem;
+        }
+        #services{
+            margin: 34px;
+            display: flex;
+        }
+        #services .box{
+            border: 2px solid red;
+            border-radius: 20px;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgb(169, 197, 142);
+        }
+        #services .box img{
+            height: 260px;
+            display: block;
+            margin: auto;
+        }
+        #services p{
+            text-align: center;
+        }
+        /* client section */
+        #client-section{
+            position: relative;
+            height: 100%;
+        }
+        #client-section::before{
+            content: "";
+            background: url('../nature.jpeg') no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+        #client-section h1{
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        #client{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .client-item{
+            margin: 79px;
+        }
+        #client img{
+            height: 199px;
+        }
+        /* contact-section */
+        #contact{
+            top: 30px;
+            position: relative;
+        }
+        #contact::before{
+            content: "";
+            background: url('../foam.jpg')no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+        #contact h1{
+            font-size: .9;
+            text-align: center;
+            font-weight: bold;
+            color: black;
+        }
+        #contact-box{
+            display: flex;
+            width: 100%;
+            
+            padding-bottom: 34px;
+            justify-content: center;
+            align-items: center;
+        }
+        #contact-box label{
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        #contact-box textarea,
+        #contact-box input{
+            width: 100%;
+            padding: 0.5rem;
+        }
+        #contact-box form{
+            width: 40%;
+        }
+        /* uti;ity classes */
+        .h-primary {
+            font-size: 2.8rem;
+            padding: 12px;   
+        }
+        .h-secondary{
+            text-align: center;
+            font-size: 3rem;
+        }
+        .btn {
+            color: aliceblue;
+            margin: 12px;
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: black;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: bisque;
+        }
+        .end{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">More Info</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">WELCOME TO MY ACADEMY</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aliquid? Accusamus, quaerat!</P>
+        <P>Lorem ipsum consectetur adipisicing elit. Eaque, aliquid? Accusamus, quaerat!</P>
+        <button class="btn">SUBMIT</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-peimary ">OUR SERVICES</h1>
+        <div id="services">
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h2 class="h-secondary">Review</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea voluptas necessitatibus, laudantium
+                    nostrum Nostrum!</p>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h2 class="h-secondary">About Academy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea voluptas necessitatibus, laudantium
+                    nostrum Nostrum!</p>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h2 class="h-secondary">About Quran Teachers</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea voluptas necessitatibus, laudantium
+                    nostrum Nostrum!</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary">OUR CLIENTS</h1>
+        <div id="client">
+            <div class="client-item">
+                <img src="skype.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="hp.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="apple-logo.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="facebook.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary">CONTACT US</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form">
+                <label for="name">NAME: </label>
+                <input type="text" name="NAME" placeholder="ENTER YOUR NAME">
+            </div>
+                <div class="form">
+                <label for="name">EMAIL: </label>
+                <input type="text" name="NAME" placeholder="ENTER YOUR EMAIL">
+            </div>
+                <div class="form">
+                <label for="name">PHONE NUMBER: </label>
+                <input type="text" name="NAME" placeholder="ENTER YOUR NUMBER">
+            </div>
+                <div class="form">
+                <label for="name">MESSAGE: </label>
+            <textarea name="MESSAGE" id="MESSAGE"></textarea>
+            </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="end">
+            copyright &copy; www.AL QURAN ACADEMY alright reserve!
+        </div>
+    </footer>
+</body>
+</html>
